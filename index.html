@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github favorites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <img class="logo" src="assets/Gitfav.svg" alt="Logo git favorites">
+
+            <div class="search">
+                <label class="sr-only" for="searchUser">Search for you favorite user</label>
+                <input id="searchUser" type="text" placeholder="Search for your favorite user">
+                <button>
+
+                    <img src="assets/Vector.svg" alt="star">
+                    Bookmark
+                </button>
+            </div>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Repositories</th>
+                    <th>Followers</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/vitortorquato.png" alt="Vitor Torquato Image">
+                        <a href="https://github.com/maykbrito">
+                            <p>Vitor Torquato</p>
+                            <span>/vitortorquato</span>
+                        </a>
+                       
+                    </td>
+                    <td class="repositories">11</td>
+                    <td class="followers">1</td>
+                    <td ><button class="remove" >Remover</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/maykbrito.png" alt="Mayk Brito Image">
+                        <a href="https://github.com/maykbrito" target="_blank">
+                        <p>Mayk Brito</p>
+                        <span>/Mayk</span>
+                        </a>
+                    </td>
+                    <td class="repositories">11</td>
+                    <td class="followers">1</td>
+                    <td><button class="remove">Remover</button>
+                    </td>
+                </tr>
+             
+                 
+                
+            
+        </tbody>
+    </table>
+    <div class="noFavoritesAdd" >
+           <img src="assets/Estrela.svg" alt="Big star">
+           <p>Any favorites add</p>
+    </div>
+</div>
+
+</body>
+</html>

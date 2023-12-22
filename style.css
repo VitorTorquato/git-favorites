@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --ff-primary: 'Roboto', sans-serif;
+
+    --bg-color:#000;
+    --text-color:#E1E1E6;
+    --ph-color:#7C7C8A;
+    --button-color:#065E7C;
+    --button-hover: #FFF;
+    --tb-header-color:#092D38;
+    --input-bg:hsla(191, 65%, 7%, 1);
+    --alternateRow-color:hsla(192, 65%, 7%, 1);
+    --removeButton-color:hsla(355, 91%, 66%, 1);
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    
+    
+}
+
+body *{
+    font-family: var(--ff-primary);
+}
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.app{
+    max-width: 1120px;
+    margin: 8rem auto;
+    
+
+  
+}
+
+/*header and input*/
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    width: 18.8rem;
+    height: 3.2rem;
+    margin-bottom: 8.8rem;
+}
+.search{
+    display: flex;
+    gap:.8rem;
+}
+
+.search input{
+    width: 43rem;
+    height: 4.8rem;
+    padding: 1.6rem;
+    background-color: var(--input-bg);
+    border: none;
+    border-radius: .5rem;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.search button{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    border: none;
+    width: 17rem;
+    height: 4.8rem;
+    background-color: var(--button-color);
+    border-radius: .5rem;
+    padding: 1.2rem 3.2rem;
+
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.search  button:hover {
+    background-color:var(--button-hover);
+    color:var(--button-color);
+    
+}
+
+.noFavoritesAdd{
+    display: none;
+}
+.noFavoritesAdd.noFav{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    outline: 1px solid #4A808C;
+    border-radius: 0 0 1.4rem 1.4rem;
+
+    
+}
+
+.noFavoritesAdd p{
+    color: #4E5455;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 24.781px;
+
+}
+/*table*/
+
+table *{
+    font-size: 2rem;
+}
+table{
+    width: 100%;
+    border-collapse:collapse;
+    outline: 1px solid #4A808C;
+    border-radius: 1.4rem;
+    
+       
+    
+}
+
+
+table th{
+    height: 6.4rem;
+    text-align: left;
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+
+    background-color: var(--tb-header-color);
+    
+}
+
+table th:first-child{
+    border-top-left-radius: 1.2rem;
+}
+table th:last-child{
+    border-top-right-radius: 1.2rem;
+}
+
+
+
+
+table td{    
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+    
+}
+
+table tbody tr:nth-child(even){
+    border-top:1px solid #4A808C ;
+    
+}
+table tbody tr:nth-child(odd){
+    border-top:1px solid #4A808C ;
+}
+
+.user img{
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+td.user {
+    width: 50.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+td.user a{
+    text-decoration: none;   
+   
+}
+td.user a p {
+    font-weight: 700;
+    line-height: 160%;
+    color: var(--text-color);
+}
+
+td.user span{
+    color: var(--text-color);
+    font-weight: 400;
+    margin-top: .8rem;
+}
+
+td .remove{
+    border: none;
+    background-color: transparent;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    
+
+    color:var(--removeButton-color);
+
+    cursor: pointer;
+}
+
+
+

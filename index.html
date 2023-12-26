@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github favorites</title>
     <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
-    <div class="app">
+    <div id="app">
         <header>
             <img class="logo" src="assets/Gitfav.svg" alt="Logo git favorites">
 
@@ -32,43 +34,15 @@
                 </tr>
             </thead>
            <tbody>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/vitortorquato.png" alt="Vitor Torquato Image">
-                        <a href="https://github.com/maykbrito">
-                            <p>Vitor Torquato</p>
-                            <span>/vitortorquato</span>
-                        </a>
-                       
-                    </td>
-                    <td class="repositories">11</td>
-                    <td class="followers">1</td>
-                    <td ><button class="remove" >Remover</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/maykbrito.png" alt="Mayk Brito Image">
-                        <a href="https://github.com/maykbrito" target="_blank">
-                        <p>Mayk Brito</p>
-                        <span>/Mayk</span>
-                        </a>
-                    </td>
-                    <td class="repositories">11</td>
-                    <td class="followers">1</td>
-                    <td><button class="remove">Remover</button>
-                    </td>
-                </tr>
-             
-                 
-                
+            </tbody>
             
-        </tbody>
-    </table>
-    <div class="noFavoritesAdd" >
-           <img src="assets/Estrela.svg" alt="Big star">
-           <p>Any favorites add</p>
-    </div>
+        </table>
+        
+        <div  class="noFavoriteAdd ">
+                        <img src="assets/Estrela.svg" alt="Big star">
+                        <p>Any favorites add</p>
+        </div>
+
 </div>
 
 </body>

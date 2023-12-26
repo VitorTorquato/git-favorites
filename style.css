@@ -24,7 +24,7 @@ body{
     font-size: 1.6rem;
     background-color: var(--bg-color);
     color: var(--text-color);
-
+  
     
     
 }
@@ -44,10 +44,10 @@ body *{
     border-width: 0;
 }
 
-.app{
-    max-width: 1120px;
-    margin: 8rem auto;
-    
+#app{
+    width: 1220px;
+    margin:0 auto;
+    padding: 0 12rem 6rem 12rem;
 
   
 }
@@ -58,12 +58,14 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 11.6rem 0 8.4rem  ;
 }
 
 header .logo{
     width: 18.8rem;
     height: 3.2rem;
-    margin-bottom: 8.8rem;
+   
 }
 .search{
     display: flex;
@@ -86,7 +88,7 @@ header .logo{
 .search button{
     display: flex;
     align-items: center;
-    gap: .8rem;
+    gap:.8rem ;
     border: none;
     width: 17rem;
     height: 4.8rem;
@@ -110,30 +112,6 @@ header .logo{
     
 }
 
-.noFavoritesAdd{
-    display: none;
-}
-.noFavoritesAdd.noFav{
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6rem;
-    outline: 1px solid #4A808C;
-    border-radius: 0 0 1.4rem 1.4rem;
-
-    
-}
-
-.noFavoritesAdd p{
-    color: #4E5455;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 24.781px;
-
-}
 /*table*/
 
 table *{
@@ -145,16 +123,18 @@ table{
     outline: 1px solid #4A808C;
     border-radius: 1.4rem;
     
-       
-    
 }
 
+table{
+    outline: 1px solid #4A808C;
+    border-radius: 1.4rem 1.4rem 0 0;
+}
 
 table th{
     height: 6.4rem;
     text-align: left;
-    padding: 1.6rem 2.4rem 1.6rem 4rem;
-
+    padding: 1.6rem 2rem 1.6rem 4rem;
+    
     background-color: var(--tb-header-color);
     
 }
@@ -169,10 +149,6 @@ table th:last-child{
 
 
 
-table td{    
-    padding: 1.6rem 2.4rem 1.6rem 4rem;
-    
-}
 
 table tbody tr:nth-child(even){
     border-top:1px solid #4A808C ;
@@ -182,6 +158,10 @@ table tbody tr:nth-child(odd){
     border-top:1px solid #4A808C ;
 }
 
+table tbody td{    
+    padding: 2.4rem 2.4rem 2.4rem 4rem;
+    
+}
 .user img{
     width: 5.6rem;
     height: 5.6rem;
@@ -198,7 +178,7 @@ td.user {
 
 td.user a{
     text-decoration: none;   
-   
+    
 }
 td.user a p {
     font-weight: 700;
@@ -218,11 +198,36 @@ td .remove{
     font-family: var(--ff-primary);
     font-weight: 700;
     
-
     color:var(--removeButton-color);
-
+    
+    
     cursor: pointer;
 }
+ .noFavoriteAdd{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    outline: 1px solid #4A808C;
+    border-radius: 0 0 1.4rem 1.4rem;
+
+}
+
+.noFavoriteAdd p{
+    color: #4E5455;
+    font-family: 'Roboto Mono';
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+
+}
+
+#app:not(.noFav) .noFavoriteAdd{
+    display: none;
+}
+
 
 
 
